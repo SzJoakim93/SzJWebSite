@@ -1,0 +1,84 @@
+body {
+    background-color: #161616;
+    color: white;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    letter-spacing: 0.15em;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 1000px;
+}
+
+.header > hr {
+    border-bottom: gray;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    position: relative;
+    top: 56px;
+    z-index: -1;
+}
+
+.header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+.header > ul > li {
+    float: left;
+}
+
+.header > ul > li .active {
+    border-bottom: #68acff;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}  
+
+.header > ul > li a {
+    display: block;
+    color: #68acff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    padding: 5px;
+    line-height: 30px;
+}
+
+td {
+    width: 200px;
+}
+
+.content {
+    padding: 50px;
+}
+
+.title-header {
+    border-bottom: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.profile-img {
+    width: 200px;
+    float: right;
+}
+
+.icon {
+    width: 50px;
+    vertical-align: middle;
+}
