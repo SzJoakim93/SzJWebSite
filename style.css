@@ -82,3 +82,30 @@ td {
     width: 50px;
     vertical-align: middle;
 }
+
+.nav-button {
+    background-color: #272727;
+    color: #68acff;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button  {
+    background-color: #68acff;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+}
+
+.nav-button.active {
+    background-color: #68acff;
+    color: white;
+}
+
+.product-content {
+    background-color: #333333;
+}
