@@ -26,11 +26,13 @@ function selectMenu(x) {
     contents[x].style.display = "block";
 }
 
-function addGame(name, gDescription, tDescription) {
-    var menuTemp = `<div class="nav-button" onmouseover="selectMenu(${elementNumber})">${name}</div>`
-    menuArea.innerHTML += menuTemp;
+function addData(data) {
 
-    var contentTemp =
+    var menuTemp = `<div class="nav-button" onmouseover="selectMenu(${elementNumber})">${data.name}</div>`
+
+    $(`#${data.container} > .container > .nav-button-area`).append(menuTemp);
+
+    var contentTemp = 
     `
         <div class="product-content">
             <div class="container">
@@ -39,11 +41,34 @@ function addGame(name, gDescription, tDescription) {
                     <div class="col-sm-6"><div class="button">Forráskód</div></div>
                 </div>
             </div>
-            <p id="game-description">${gDescription}</p>
-            <p id="technical-description">${tDescription}</p>
+            <p>${data.gameDescription}</p>
+            <p>${data.technicalDescription}</p>
         </div>
     `
-
-    contentArea.innerHTML += contentTemp;
+    $(`#${data.container} > .container > .nav-button-area`).append(contentTemp);
+    console.log($(`#${data.container} > .container > .nav-button-area`));
     elementNumber++;
 }
+
+var ChangeMenuView = function (e) {
+
+    let id = $(e).attr('id');
+    $('#home').removeClass('active');
+    $('#myPages').removeClass('active');
+    $('#myGames').removeClass('active');
+    $("#home-content").hide();
+    $("#myGames-content").hide();
+    $(`#${id}`).addClass('active');
+
+    switch (id) {
+        case "home":
+            $("#home-content").slideDown(800);
+            break;
+        case "myPages":
+            $(".myPages-content").slideDown(800);
+            break;
+        case "myGames":
+            $("#myGames-content").slideDown(800);
+            break;
+    }
+};

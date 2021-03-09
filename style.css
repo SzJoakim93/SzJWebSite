@@ -1,5 +1,5 @@
 body {
-    background-color: #161616;
+    background-color: #333a56;
     color: white;
     padding: 10px;
     padding-left: 100px;
@@ -84,7 +84,7 @@ td {
 }
 
 .nav-button {
-    background-color: #272727;
+    background-color: #41465c;
     color: #68acff;
     padding: 30px;
     text-align: center;
@@ -107,5 +107,5 @@ td {
 }
 
 .product-content {
-    background-color: #333333;
+    background-color: #475179;
 }

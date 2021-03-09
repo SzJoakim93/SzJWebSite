@@ -10,12 +10,12 @@
     <div class="header">
         <hr>
         <ul>
-            <li><a class="active" href="index.html">Főoldal</a></li>
-            <li><a href="webpages.html">Weboldalaim</a></li>
-            <li><a href="games.html">Játékaim</a></li>
+            <li><a class="active" id="home" onclick="ChangeMenuView(this)" href="#">Főoldal</a></li>
+            <li><a id="myPages" onclick="ChangeMenuView(this)" href="#">Weboldalaim</a></li>
+            <li><a id="myGames" onclick="ChangeMenuView(this)" href="#">Játékaim</a></li>
         </ul>
     </div>
-    <div class="content">
+    <div class="content" id="home-content">
         <div>
         <h2>Szabó Joakim szoftverfejlesztői weboldala</h2>
         <img class="profile-img" src="content/profile.png">
@@ -39,10 +39,26 @@
         </div>
         <div>
             <div class="title-header">Letölthető önéletrajzok:</div>
-            <p><img class="icon" src="content/pdf.png"> <a href="cv/SzJoakim-CV-HUN.pdf">magyar</a></p>
+            <p><img class="icon" src="content/pdf.png"><a href="cv/SzJoakim-CV-HUN.pdf">magyar</a></p>
             <p><img class="icon" src="content/pdf.png"><a href="cv/SzJoakim-CV-ENG.pdf">angol</a></p>
             <p><img class="icon" src="content/pdf.png"><a href="cv/SzJoakim-CV-HUN-GENERAL.pdf">magyar (általános)</a></p>
         </div>
-        
     </div>
+    <div class="content" id="myGames-content" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" class="nav-button-area">
+    
+                </div>
+                <div class="col-sm-9" class="product-content-area">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/addGames.js"></script>
 </body>
+
